@@ -1,7 +1,7 @@
 {
-  "_version": "1.49.0",
+  "_version": "1.42.0",
   "sap.app": {
-    "id": "logaligroup.SAPUI5",
+    "id": "logaligroup.sapui5",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:basic",
-      "version": "1.8.5",
-      "toolsId": "c3a4b57a-a4da-4332-a606-6900ea610cf7"
+      "version": "1.8.6",
+      "toolsId": "2b33e754-ab9e-44fa-a9f2-107439790b7f"
     }
   },
   "sap.ui": {
@@ -35,7 +35,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.109.3",
+      "minUI5Version": "1.102.0",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -55,7 +55,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "logaligroup.SAPUI5.i18n.i18n"
+          "bundleName": "logaligroup.sapui5.i18n.i18n"
         }
       }
     },
@@ -71,7 +71,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "logaligroup.SAPUI5.view",
+        "viewPath": "logaligroup.sapui5.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -96,7 +96,7 @@
       }
     },
     "rootView": {
-      "viewName": "logaligroup.SAPUI5.view.App",
+      "viewName": "logaligroup.sapui5.view.App",
       "type": "XML",
       "async": true,
       "id": "App"
