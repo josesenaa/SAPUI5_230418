@@ -1,1 +1,14 @@
-{"folders":[{"path":"First"}],"settings":{}}
+{
+    "folders": [
+        {
+            "path": "First"
+        }
+    ],
+    "settings": {},
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+        
+        ]
+    }
+}
