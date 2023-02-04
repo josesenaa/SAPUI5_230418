@@ -25,7 +25,7 @@
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
-      //"port": 9229,  
+      "port": 9229,  
       "env": { 
         "DEBUG": "--inspect",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
