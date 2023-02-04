@@ -1,10 +1,5 @@
 {
-    "folders": [
-        {
-            "name": "Invoices",
-            "path": "Invoices"
-        }
-    ],
+    "folders": [],
     "settings": {},
     "launch": {
         "version": "0.2.0",
