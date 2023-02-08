@@ -1,4 +1,4 @@
-<mvc:View controllerName="logaligroup.invoices.controller.Main"
+<mvc:View controllerName="logaligroup.invoices.Controller.Main"
           xmlns="sap.m"
           xmlns:mvc="sap.ui.core.mvc">
    <Button text="Say Hello" press="onShowHello"></Button>
