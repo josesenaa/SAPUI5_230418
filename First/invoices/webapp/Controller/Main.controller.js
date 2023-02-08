@@ -1,15 +1,15 @@
 sap.ui.define([
     'sap/ui/core/mvc/Controller',
-    'sap/m/MessageToast'
-    //  'logaligroup/invoices/model/models',
-    //  'sap/ui/model/resource/ResourceModel'
+    'sap/m/MessageToast',
+    'logaligroup/invoices/model/models',
+    'sap/ui/model/resource/ResourceModel'
 
 ],
     /**
      * 
      * @param {typeof sap.ui.core.mvc.Controller} Controller 
      */
-    function (Controller, MessageToast) {
+    function (Controller, MessageToast, models, ResourceModel) {
         'use strict';
         return Controller.extend("logaligroup.invoices.Controller.Main", {
             onInit: function () {

@@ -3,7 +3,7 @@ sap.ui.define([
     'logaligroup/invoices/model/models',
     'sap/ui/model/resource/ResourceModel'
 
-], function (UIComponent, models, ResourceModel) {
+], function(UIComponent, models, ResourceModel) {
     'use strict';
 
     return UIComponent.extend("logaligroup.invoices.Component", {
