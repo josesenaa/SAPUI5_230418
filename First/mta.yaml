@@ -1,0 +1,38 @@
+_schema-version: "3.2"
+ID: First
+version: 0.0.1
+modules:
+- name: first-approuter
+  type: approuter.nodejs
+  path: first-approuter
+  requires:
+  - name: First_html_repo_runtime
+  - name: uaa_First
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+- name: First_ui_deployer
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: First_html_repo_host
+    parameters:
+      content-target: true
+resources:
+- name: First_html_repo_runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: uaa_First
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: First-xsuaa-service
+    service-plan: application
+- name: First_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-host
