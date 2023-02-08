@@ -1,10 +1,17 @@
 sap.ui.define([
-  "sap/ui/core/mvc/XMLView"
+  "sap/ui/core/ComponentContainer"
 ],
-  function (XMLView) {
-    XMLView.create({
-      viewName: "logaligroup.invoices.view.Main"
-    }).then(function (oView) {
-      oView.placeAt("content");
-    });
+  function (ComponentContainer) {
+    new ComponentContainer({
+       name : "logaligroup.invoices",
+       settings : {
+        id : "logaligroup.invoices"
+       },
+       async : true
+    }).placeAt("content");
+    // XMLView.create({
+    //   viewName: "logaligroup.invoices.view.Main"
+    // }).then(function (oView) {
+    //   oView.placeAt("content");
+    // });
   });

@@ -1,23 +1,23 @@
 sap.ui.define([
     'sap/ui/core/mvc/Controller',
-    'sap/m/MessageToast',
-    'logaligroup/invoices/model/models',
-    'sap/ui/model/resource/ResourceModel'
+    'sap/m/MessageToast'
+    //  'logaligroup/invoices/model/models',
+    //  'sap/ui/model/resource/ResourceModel'
 
 ],
     /**
      * 
      * @param {typeof sap.ui.core.mvc.Controller} Controller 
      */
-    function (Controller, MessageToast, models, ResourceModel) {
+    function (Controller, MessageToast) {
         'use strict';
         return Controller.extend("logaligroup.invoices.Controller.Main", {
             onInit: function () {
 
-                this.getView().setModel(models.CreateRecipient());
+                // this.getView().setModel(models.CreateRecipient());
 
-                var i18nModel = new ResourceModel({ bundleName : "logaligroup.invoices.i18n.i18n"});
-                this.getView().setModel(i18nModel, "i18n");
+                // var i18nModel = new ResourceModel({ bundleName : "logaligroup.invoices.i18n.i18n"});
+                // this.getView().setModel(i18nModel, "i18n");
             },
 
             onShowHello: function () {
