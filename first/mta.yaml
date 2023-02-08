@@ -1,3 +1,43 @@
 _schema-version: "3.2"
 ID: first
 version: 0.0.1
+modules:
+- name: first-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: first-destination-service
+    parameters:
+      content-target: true
+  - name: uaa_first
+    parameters:
+      service-key:
+        name: uaa_first-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Authentication: OAuth2UserTokenExchange
+          Name: sapui5_uaa_first
+          ServiceInstanceName: first-xsuaa-service
+          ServiceKeyName: uaa_first-key
+          sap.cloud.service: sapui5
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+resources:
+- name: first-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      version: 1.0.0
+    service: destination
+    service-name: first-destination-service
+    service-plan: lite
+- name: uaa_first
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: first-xsuaa-service
+    service-plan: application
