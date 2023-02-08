@@ -1,8 +1,10 @@
 sap.ui.define([
-   "sap/m/Text"
+  "sap/ui/core/mvc/XMLView"
 ],
-    function (Text) {
-      new Text({
-        text : "Hello World!!!"
-      });
+  function (XMLView) {
+    XMLView.create({
+      viewName: "logaligroup.invoices.view.Main"
+    }).then(function (oView) {
+      oView.placeAt("content");
     });
+  });
