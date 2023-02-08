@@ -12,6 +12,10 @@ modules:
     parameters:
       service-key:
         name: uaa_first-key
+  - name: first_html_repo_host
+    parameters:
+      service-key:
+        name: first_html_repo_host-key
   parameters:
     content:
       instance:
@@ -20,6 +24,10 @@ modules:
           Name: sapui5_uaa_first
           ServiceInstanceName: first-xsuaa-service
           ServiceKeyName: uaa_first-key
+          sap.cloud.service: sapui5
+        - Name: sapui5_first_html_repo_host
+          ServiceInstanceName: first-html5-app-host-service
+          ServiceKeyName: first_html_repo_host-key
           sap.cloud.service: sapui5
         existing_destinations_policy: ignore
   build-parameters:
@@ -41,3 +49,9 @@ resources:
     service: xsuaa
     service-name: first-xsuaa-service
     service-plan: application
+- name: first_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: first-html5-app-host-service
+    service-plan: app-host
