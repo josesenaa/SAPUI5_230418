@@ -1,6 +1,8 @@
 sap.ui.define([
-
+   "sap/m/Text"
 ],
-    function () {
-      alert("UI5 esta cargado");
+    function (Text) {
+      new Text({
+        text : "Hello World!!!"
+      });
     });
