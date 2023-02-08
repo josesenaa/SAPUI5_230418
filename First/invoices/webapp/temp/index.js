@@ -2,5 +2,5 @@ sap.ui.define([
 
 ],
     function () {
-      alert("UI5 esta cargado")
+      alert("UI5 esta cargado");
     });
