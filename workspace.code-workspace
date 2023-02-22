@@ -2,10 +2,6 @@
     "folders": [
         {
             "path": "."
-        },
-        {
-            "name": "First",
-            "path": "First"
         }
     ],
     "settings": {},
