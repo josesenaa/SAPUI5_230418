@@ -1,0 +1,20 @@
+<mvc:View controllerName="empleado.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    displayBlock="true">
+
+    <Shell>
+       <App >
+           <pages>
+             <Page id="page"
+                   title="{i18n>title}">
+               <content>
+
+               </content>
+           </Page>
+         </pages>
+       </App>
+    </Shell>
+
+   
+</mvc:View>
